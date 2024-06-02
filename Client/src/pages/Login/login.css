@@ -1,0 +1,30 @@
+.login {
+    position: relative;
+    margin-bottom: 50px;
+}
+.login .backImg {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+.login .backImg img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.login .text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    z-index: 1;
+}
+.login .text h1 {
+    font-size: 40px;
+}
+.title {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+    font-weight: 800;
+}

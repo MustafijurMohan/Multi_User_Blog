@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+h3 {
+    font-weight: 500;
+}
+ul, li, a, input, textarea, button {
+    list-style: none;
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+::placeholder {
+    font-size: 17px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 15px;
+    color: #5a5a5a;
+}
+label {
+    font-size: 13px;
+    color: #999;
+}
+form, .boxItems {
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fff;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 80px;
+    padding: 40px;
+}
+form span {
+    margin-bottom: 20px;
+}
+form textarea,
+.accountInfo .right input,
+form input {
+    border: 1px solid #212121;
+    border-radius: 6px;
+    padding: 0 20px;
+    width: 100%;
+    min-height: 44px;
+    color: #212121;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.container {
+    max-width: 95%;
+    margin: auto;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+.button {
+    padding: 15px 30px;
+    background-color: #212121;
+    color: #fff;
+    border: 1px solid #212121;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: 400;
+    height: 48px;
+    line-height: 1;
+    cursor: pointer;
+}
+.link {
+    margin-top: 20px;
+    color: blue;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 10px;
+}
+footer .icon {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .grid3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

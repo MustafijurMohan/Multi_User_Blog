@@ -1,0 +1,47 @@
+.newPost {
+    margin-top: 50px;
+}
+.newPost .container {
+    max-width: 50%;
+}
+.newPost .icon {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: -20px;
+}
+.newPost img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.newPost .img {
+    position: relative;
+}
+.newPost form {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+}
+.newPost .inputfile input {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    opacity: 0;
+    z-index: 2;
+}
+.newPost .inputfile label {
+    display: block;
+    font-size: 30px;
+    margin-left: 0;
+    width: 100%;
+    color: #000;
+    cursor: pointer;
+}
+.newPost .img img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    z-index: 1;
+}
