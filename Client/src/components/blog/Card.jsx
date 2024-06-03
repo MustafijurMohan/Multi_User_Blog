@@ -1,11 +1,30 @@
 
+import { useEffect, useState } from 'react';
 import './card.css'
 import { AiOutlineTags, AiOutlineClockCircle, AiOutlineComment, AiOutlineShareAlt  } from "react-icons/ai";
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import axios from 'axios';
 const PF = 'http://localhost:3000/uploads/'
+const url = 'http://localhost:3000/api/v1'
 
+const Card = () => {
 
-const Card = ({post}) => {
+    const [post, setPost] = useState([])
+    const { search } = useLocation()
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const res = await axios.get(url + '/FindAllPost' + search)
+                setPost(res.data['data'])
+
+            } catch (error) {
+                console.log(error)
+            }
+        }
+        fetchData()
+    }, [search])
+    
 
 
   return (

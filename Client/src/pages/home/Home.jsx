@@ -8,25 +8,25 @@ const URL = 'http://localhost:3000/api/v1'
 
 const Home = () => {
 
-  const [post, setPost] = useState([])
-  const { search } = useLocation()
+  // const [post, setPost] = useState([])
+  // const { search } = useLocation()
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-          const res = await axios.get(URL + '/FindAllPost' + search)
-          setPost(res.data['data'])
-      } catch (error) {
-          console.log(error)
-      }
-    }
-    fetchData()
-  }, [search])
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //         const res = await axios.get(URL + '/FindAllPost' + search)
+  //         setPost(res.data['data'])
+  //     } catch (error) {
+  //         console.log(error)
+  //     }
+  //   }
+  //   fetchData()
+  // }, [search])
 
   return (
     <div>
         <Category />
-        <Card post={post} />
+        <Card />
     </div>
   )
 }
